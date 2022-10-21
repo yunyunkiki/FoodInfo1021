@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FoodInfo1021" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/flatYellow</item>
+        <item name="colorPrimaryVariant">@color/flatYellow</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/flatYellow</item>
+        <item name="colorSecondaryVariant">@color/flatYellow</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/backgroundColor</item>
+        <!-- Customize your theme here. -->
+
+        <item name="textColor">@color/materialGray0</item>
+        <item name="buttonTextColor">@color/white</item>
+        <item name="backgroundColor">@color/flatBlack</item>
+        <item name="unselectedColor">@color/materialGray4</item>
+
+        <item name="android:ambientShadowAlpha">0.03</item>
+        <item name="android:spotShadowAlpha">0.03</item>
+
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+        <item name="editTextStyle">@style/EditTextStyle</item>
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
+    </style>
+</resources>

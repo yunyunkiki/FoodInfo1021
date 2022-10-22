@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="com.david0926.foodinfo.ui.onboard.OnboardViewModel" />
+            type="com.david0926.foodinfo1021.ui.onboard.OnboardViewModel" />
 
         <variable
             name="maxPage"
@@ -39,7 +39,6 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginBottom="1dp"
-            app:bindViewPagerCallback="@{viewModel.pagerCallback}"
             app:layout_constraintBottom_toTopOf="@+id/bt_onboard_finish"
             app:layout_constraintTop_toBottomOf="@+id/bt_onboard_skip" />
 

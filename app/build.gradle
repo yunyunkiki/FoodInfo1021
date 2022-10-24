@@ -5,6 +5,10 @@ plugins {
     id 'dagger.hilt.android.plugin'
 }
 
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+def apiKey = properties.getProperty('apiKey')
+
 android {
     namespace 'com.david0926.foodinfo1021'
     compileSdk 33
@@ -20,6 +24,9 @@ android {
     }
 
     buildTypes {
+        buildTypes.each {
+            it.buildConfigField "String", "API_KEY", apiKey
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
